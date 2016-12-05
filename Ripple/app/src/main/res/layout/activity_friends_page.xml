@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context="com.ripple.ripple.FriendsPageActivity"
+    android:background="#3c3c3b">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbarFriends"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        />
+
+    <GridView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+        android:gravity="center"
+        android:id="@+id/gridViewFriendsXMLL"
+        android:focusable="true"
+        android:clickable="true"
+        android:verticalSpacing="25dp"
+        android:horizontalSpacing="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:stretchMode="columnWidth"
+        android:layout_above="@+id/linearLayout5"
+        android:background="#474746"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/my_toolbarFriends" />
+
+    <ProgressBar
+        android:id="@+id/progressFriendsPage"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

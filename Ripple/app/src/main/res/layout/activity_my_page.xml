@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context="com.ripple.ripple.myPageActivity"
+    android:background="#474746">
+
+    <GridView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+        android:gravity="center"
+        android:id="@+id/gridViewXMLL"
+        android:focusable="true"
+        android:clickable="true"
+        android:verticalSpacing="25dp"
+        android:horizontalSpacing="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:stretchMode="columnWidth"
+        android:layout_above="@+id/linearLayout5"
+        android:layout_below="@+id/linearLayout6"
+        android:layout_margin="0dp"
+        android:layout_marginRight="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#7800ff"
+        android:id="@+id/linearLayout6"
+        android:gravity="center|center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="My Page"
+            android:id="@+id/textView"
+            android:textColor="#ffffff"
+            android:textSize="24dp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="&lt;"
+        android:id="@+id/bbMyPageXml"
+        android:textSize="48dp"
+        android:background="#7800ff"
+        android:textStyle="normal"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>

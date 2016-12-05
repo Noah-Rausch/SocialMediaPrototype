@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.ripple.ripple.LoginActivity"
+    android:background="#fafbff">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:paddingBottom="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/emailEDXML"
+            android:layout_marginTop="10dp"
+            android:height="30dp"
+            android:layout_below="@+id/usernameLabel"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMAIL"
+            android:id="@+id/emailLabel"
+            android:layout_below="@+id/emailEDXML"
+            android:layout_centerHorizontal="true"
+            android:textSize="18dp"
+            android:textColor="#020202"
+            android:layout_gravity="center" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/passwordEDXML"
+            android:height="30dp"
+            android:layout_below="@+id/emailLabel"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="0dp"
+            android:layout_alignLeft="@+id/emailEDXML"
+            android:layout_alignStart="@+id/emailEDXML"
+            android:gravity="center"
+            android:layout_marginLeft="0dp"
+            android:password="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PASSWORD"
+            android:id="@+id/passwordLabel"
+            android:layout_below="@+id/passwordEDXML"
+            android:layout_alignLeft="@+id/usernameLabel"
+            android:layout_alignStart="@+id/usernameLabel"
+            android:textSize="18dp"
+            android:textColor="#010101"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginBTXML"
+        android:text="Login"
+        android:height="30dp"
+        android:width="200dp"
+        android:layout_alignWithParentIfMissing="false"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:background="#7800ff"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

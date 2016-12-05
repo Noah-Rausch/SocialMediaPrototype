@@ -1,0 +1,42 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.ripple.ripple.FeedFrag"
+    android:background="#3c3c3b"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <GridView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:drawSelectorOnTop="true"
+        android:gravity="center"
+        android:id="@+id/gridViewFragXMLL"
+        android:focusable="true"
+        android:clickable="true"
+        android:verticalSpacing="20dp"
+        android:horizontalSpacing="0dp"
+        android:layout_marginLeft="0dp"
+        android:stretchMode="columnWidth"
+        android:padding="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:layout_marginRight="0dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBarFeed"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</FrameLayout>
